@@ -65,9 +65,6 @@ These plots reveal precisely where and why the model fails.
 ---
 
 ## Project Structure
-=======
-# Project Structure
-
 
 ```
 asml-vlm-prob-benchmark/
