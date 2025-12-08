@@ -112,18 +112,6 @@ Large calibration errors indicate CLIP is **poorly aligned to its uncertainty**,
 
 ---
 
-# 🧬 Technical Highlights (Recruiter-Facing)
-
-### ✔ Modular architecture with reusable components  
-### ✔ Zero-shot CLIP evaluation with strict safetensor enforcement (CVE-2025-32434 compliant)  
-### ✔ Full uncertainty quantification pipeline  
-### ✔ Auto-archiving of previous experimental runs  
-### ✔ Reliability diagram + calibration analytics  
-### ✔ Clean Python packaging with `src/` layout  
-### ✔ Ready for extension with real ASML datasets or vision transformers  
-
----
-
 # Why This Project Matters for ASML & Semiconductor AI
 
 Semiconductor manufacturing demands:
