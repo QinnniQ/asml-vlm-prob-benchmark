@@ -1,9 +1,13 @@
+<p align="center">
+  <img src="logo.png" alt="ASML VLM Benchmark Logo" width="60%">
+</p>
+
 # ASML Vision-Language Benchmark with Probabilistic Scoring  
 ### Evaluating CLIP on Semiconductor-Style Diagnostic Tasks
 
 This project benchmarks a general-purpose Vision-Language Model (OpenAI CLIP ViT-B/32) on a synthetic diagnostic dataset designed to mimic ASML-style wafer defect scenarios.  
 
-The goal is to evaluate not only **classification accuracy**, but also **uncertainty**, **entropy**, and **calibration quality** — which are critical for safety-critical semiconductor diagnostic workflows.
+The goal is to evaluate not only classification accuracy, but also uncertainty, entropy, and calibration quality which are critical for safety-critical semiconductor diagnostic workflows.
 
 This repository demonstrates:
 - How VLMs behave on domain-specific semiconductor-style imagery  
@@ -190,7 +194,7 @@ This benchmark serves as a **starting point** for building semiconductor-aware A
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 - OpenAI CLIP  
 - HuggingFace Transformers  
@@ -198,7 +202,7 @@ This benchmark serves as a **starting point** for building semiconductor-aware A
 
 ---
 
-## 📬 Contact
+## Contact
 
 If you’re interested in semiconductor AI, vision-language models, or uncertainty-aware ML:
 
