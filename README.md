@@ -31,7 +31,6 @@ These measures reveal **how much the model overestimates itself**, a critical is
 
 ---
 
-<<<<<<< HEAD
 ## Key Results
 
 | Metric | Value |
@@ -66,9 +65,6 @@ These plots reveal precisely where and why the model fails.
 ---
 
 ## Project Structure
-=======
-# Project Structure
->>>>>>> 0e63026 (Update README with diagrams and full ASML benchmark documentation)
 
 ```
 asml-vlm-prob-benchmark/
