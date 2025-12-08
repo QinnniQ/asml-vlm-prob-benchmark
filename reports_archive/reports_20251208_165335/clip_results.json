@@ -1,0 +1,652 @@
+[
+  {
+    "image": "wafer_0.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_1.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.12401279807090759,
+      "scratch": 0.09396718442440033,
+      "particle": 0.7820199728012085
+    },
+    "confidence": 0.7820199728012085,
+    "entropy": 0.6733543220906364,
+    "brier_score": 1.4478298748452272
+  },
+  {
+    "image": "wafer_2.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_3.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.08945430815219879,
+      "scratch": 0.07205068320035934,
+      "particle": 0.8384950757026672
+    },
+    "confidence": 0.8384950757026672,
+    "entropy": 0.5531642451027226,
+    "brier_score": 1.57216599977353
+  },
+  {
+    "image": "wafer_4.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_5.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.061514124274253845,
+      "scratch": 0.01933310739696026,
+      "particle": 0.9191527366638184
+    },
+    "confidence": 0.9191527366638184,
+    "entropy": 0.32530594242600575,
+    "brier_score": 0.010694036515800646
+  },
+  {
+    "image": "wafer_6.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.11017289757728577,
+      "scratch": 0.09022509306669235,
+      "particle": 0.7996020317077637
+    },
+    "confidence": 0.7996020317077637,
+    "entropy": 0.6388644881542739,
+    "brier_score": 1.4791918577572671
+  },
+  {
+    "image": "wafer_7.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.07691002637147903,
+      "scratch": 0.02337116003036499,
+      "particle": 0.8997187614440918
+    },
+    "confidence": 0.8997187614440918,
+    "entropy": 0.3801473775812723,
+    "brier_score": 0.0165176900839335
+  },
+  {
+    "image": "wafer_8.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.12936758995056152,
+      "scratch": 0.0767119750380516,
+      "particle": 0.7939204573631287
+    },
+    "confidence": 0.7939204573631287,
+    "entropy": 0.6447570775856627,
+    "brier_score": 1.4995064429874314
+  },
+  {
+    "image": "wafer_9.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.11913911253213882,
+      "scratch": 0.09838923066854477,
+      "particle": 0.7824716567993164
+    },
+    "confidence": 0.7824716567993164,
+    "entropy": 0.6735498128404191,
+    "brier_score": 1.4393580012036713
+  },
+  {
+    "image": "wafer_10.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_11.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_12.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.09518210589885712,
+      "scratch": 0.08428390324115753,
+      "particle": 0.8205339908599854
+    },
+    "confidence": 0.8205339908599854,
+    "entropy": 0.5946480583842358,
+    "brier_score": 1.5208716333032055
+  },
+  {
+    "image": "wafer_13.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_14.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_15.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_16.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.12600472569465637,
+      "scratch": 0.10607140511274338,
+      "particle": 0.7679238319396973
+    },
+    "confidence": 0.7679238319396973,
+    "entropy": 0.7017786480692709,
+    "brier_score": 1.404692535315439
+  },
+  {
+    "image": "wafer_17.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.10193103551864624,
+      "scratch": 0.10732376575469971,
+      "particle": 0.790745198726654
+    },
+    "confidence": 0.790745198726654,
+    "entropy": 0.6579425422467051,
+    "brier_score": 1.4325387644975294
+  },
+  {
+    "image": "wafer_18.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_19.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.100766122341156,
+      "scratch": 0.09584207832813263,
+      "particle": 0.8033917546272278
+    },
+    "confidence": 0.8033917546272278,
+    "entropy": 0.6318810736678419,
+    "brier_score": 1.4730936701366792
+  },
+  {
+    "image": "wafer_20.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_21.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.06786856055259705,
+      "scratch": 0.016688279807567596,
+      "particle": 0.9154431223869324
+    },
+    "confidence": 0.9154431223869324,
+    "entropy": 0.3317614400803856,
+    "brier_score": 0.012034505746088497
+  },
+  {
+    "image": "wafer_22.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.05485588684678078,
+      "scratch": 0.014521563425660133,
+      "particle": 0.9306226372718811
+    },
+    "confidence": 0.9306226372718811,
+    "entropy": 0.28761924200173233,
+    "brier_score": 0.008033262585181267
+  },
+  {
+    "image": "wafer_23.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.11580295860767365,
+      "scratch": 0.11019162088632584,
+      "particle": 0.7740054130554199
+    },
+    "confidence": 0.7740054130554199,
+    "entropy": 0.6909689066177771,
+    "brier_score": 1.4042536562022858
+  },
+  {
+    "image": "wafer_24.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_25.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.04770136997103691,
+      "scratch": 0.015469333156943321,
+      "particle": 0.9368293285369873
+    },
+    "confidence": 0.9368293285369873,
+    "entropy": 0.2707675454521776,
+    "brier_score": 0.0065052546985221345
+  },
+  {
+    "image": "wafer_26.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.1163562685251236,
+      "scratch": 0.10920844972133636,
+      "particle": 0.77443528175354
+    },
+    "confidence": 0.77443528175354,
+    "entropy": 0.6900976267895167,
+    "brier_score": 1.4067983728976405
+  },
+  {
+    "image": "wafer_27.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_28.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.10374808311462402,
+      "scratch": 0.10856874287128448,
+      "particle": 0.7876831293106079
+    },
+    "confidence": 0.7876831293106079,
+    "entropy": 0.6641222702344779,
+    "brier_score": 1.425858063136593
+  },
+  {
+    "image": "wafer_29.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.08593758940696716,
+      "scratch": 0.02263992838561535,
+      "particle": 0.89142245054245
+    },
+    "confidence": 0.89142245054245,
+    "entropy": 0.3991205878016033,
+    "brier_score": 0.019686919876592993
+  },
+  {
+    "image": "wafer_30.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.05615444481372833,
+      "scratch": 0.01405783649533987,
+      "particle": 0.9297876954078674
+    },
+    "confidence": 0.9297876954078674,
+    "entropy": 0.2893434352559046,
+    "brier_score": 0.00828071215540617
+  },
+  {
+    "image": "wafer_31.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.05789842829108238,
+      "scratch": 0.015638383105397224,
+      "particle": 0.9264631867408752
+    },
+    "confidence": 0.9264631867408752,
+    "entropy": 0.30074536079570036,
+    "brier_score": 0.009004449929036169
+  },
+  {
+    "image": "wafer_32.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.06268680840730667,
+      "scratch": 0.01821519061923027,
+      "particle": 0.9190979599952698
+    },
+    "confidence": 0.9190979599952698,
+    "entropy": 0.3241160498313085,
+    "brier_score": 0.010806569194516238
+  },
+  {
+    "image": "wafer_33.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.056827954947948456,
+      "scratch": 0.016670256853103638,
+      "particle": 0.9265017509460449
+    },
+    "confidence": 0.9265017509460449,
+    "entropy": 0.3019457758856838,
+    "brier_score": 0.008909306541111717
+  },
+  {
+    "image": "wafer_34.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.09965230524539948,
+      "scratch": 0.08330678194761276,
+      "particle": 0.8170409202575684
+    },
+    "confidence": 0.8170409202575684,
+    "entropy": 0.601937397513417,
+    "brier_score": 1.517812903339298
+  },
+  {
+    "image": "wafer_35.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_36.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.08927992731332779,
+      "scratch": 0.09495718032121658,
+      "particle": 0.8157628774642944
+    },
+    "confidence": 0.8157628774642944,
+    "entropy": 0.605373923178526,
+    "brier_score": 1.4925424831220213
+  },
+  {
+    "image": "wafer_37.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.05165497586131096,
+      "scratch": 0.01682697795331478,
+      "particle": 0.9315180778503418
+    },
+    "confidence": 0.9315180778503418,
+    "entropy": 0.287878372224688,
+    "brier_score": 0.007641157379585806
+  },
+  {
+    "image": "wafer_38.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.05352146551012993,
+      "scratch": 0.01741565763950348,
+      "particle": 0.9290628433227539
+    },
+    "confidence": 0.9290628433227539,
+    "entropy": 0.2955928694234132,
+    "brier_score": 0.008199932598820583
+  },
+  {
+    "image": "wafer_39.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.06506004184484482,
+      "scratch": 0.017127204686403275,
+      "particle": 0.917812705039978
+    },
+    "confidence": 0.917812705039978,
+    "entropy": 0.3261441945915745,
+    "brier_score": 0.011280901638068566
+  },
+  {
+    "image": "wafer_40.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.04499460756778717,
+      "scratch": 0.017286820337176323,
+      "particle": 0.9377185702323914
+    },
+    "confidence": 0.9377185702323914,
+    "entropy": 0.2699848672013532,
+    "brier_score": 0.006202325361446551
+  },
+  {
+    "image": "wafer_41.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_42.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.04680252447724342,
+      "scratch": 0.01692100055515766,
+      "particle": 0.9362764358520508
+    },
+    "confidence": 0.9362764358520508,
+    "entropy": 0.27397362207204035,
+    "brier_score": 0.006537489184948415
+  },
+  {
+    "image": "wafer_43.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_44.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.13828158378601074,
+      "scratch": 0.11230362206697464,
+      "particle": 0.7494148015975952
+    },
+    "confidence": 0.7494148015975952,
+    "entropy": 0.7353205904730864,
+    "brier_score": 1.368749200663343
+  },
+  {
+    "image": "wafer_45.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.05922189727425575,
+      "scratch": 0.01852428913116455,
+      "particle": 0.9222538471221924
+    },
+    "confidence": 0.9222538471221924,
+    "entropy": 0.315918282146819,
+    "brier_score": 0.009894846691876916
+  },
+  {
+    "image": "wafer_46.png",
+    "true_label": "particle",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.07099803537130356,
+      "scratch": 0.022113628685474396,
+      "particle": 0.9068883061408997
+    },
+    "confidence": 0.9068883061408997,
+    "entropy": 0.3607201901562319,
+    "brier_score": 0.014199521133534732
+  },
+  {
+    "image": "wafer_47.png",
+    "true_label": "none",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.21621546149253845,
+      "scratch": 0.05489257723093033,
+      "particle": 0.728891909122467
+    },
+    "confidence": 0.728891909122467,
+    "entropy": 0.7209459516861269,
+    "brier_score": 1.1486148130226028
+  },
+  {
+    "image": "wafer_48.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.09012506157159805,
+      "scratch": 0.10560246556997299,
+      "particle": 0.8042724132537842
+    },
+    "confidence": 0.8042724132537842,
+    "entropy": 0.6294776095827627,
+    "brier_score": 1.4549235910388614
+  },
+  {
+    "image": "wafer_49.png",
+    "true_label": "scratch",
+    "pred_label": "particle",
+    "probabilities": {
+      "none": 0.1125648021697998,
+      "scratch": 0.09799591451883316,
+      "particle": 0.78943932056427
+    },
+    "confidence": 0.78943932056427,
+    "entropy": 0.6601437498946572,
+    "brier_score": 1.4494966457652185
+  }
+]

@@ -2,49 +2,36 @@
   <img src="logo.png" alt="ASML VLM Benchmark Logo" width="60%">
 </p>
 
-# ASML Vision-Language Benchmark with Probabilistic Scoring  
-### Evaluating CLIP on Semiconductor-Style Diagnostic Tasks
+# ASML Vision-Language Benchmark with Probabilistic Scoring
 
-This project benchmarks a general-purpose Vision-Language Model (OpenAI CLIP ViT-B/32) on a synthetic diagnostic dataset designed to mimic ASML-style wafer defect scenarios.  
+## Overview
 
-The goal is to evaluate not only classification accuracy, but also uncertainty, entropy, and calibration quality which are critical for safety-critical semiconductor diagnostic workflows.
+This project investigates how a general-purpose Vision-Language Model (**OpenAI CLIP ViT-B/32**) behaves when applied to **semiconductor diagnostic tasks**, inspired by scenarios encountered at **ASML**.
 
-This repository demonstrates:
-- How VLMs behave on domain-specific semiconductor-style imagery  
-- How confidence and accuracy diverge in out-of-domain settings  
-- Why calibration matters for industrial diagnostic systems  
-- How to build a complete uncertainty-aware benchmarking pipeline  
+Real-world EUV lithography diagnostics depend not only on identifying wafer defects — but on **knowing when the model is uncertain**.  
+This repository benchmarks CLIP on synthetic wafer-defect imagery and evaluates **calibration, entropy, reliability, and confidence** to identify gaps between model predictions and trustworthy engineering-grade performance.
 
 ---
 
-## Project Overview
+## Project Goals
 
-Modern ASML tools produce rich visual diagnostic data. While Vision-Language Models (VLMs) are powerful, they often lack **domain alignment** required for wafer defect analysis.
+### **1. Evaluate CLIP on ASML-style diagnostic imagery**
+- Synthetic wafer defects: *scratch*, *particle contamination*, *none*
+- Zero-shot classification using natural language prompts  
+- Measure accuracy & distribution of predictions
 
-This project explores:
-
-### **1. A synthetic wafer defect dataset**  
-Three diagnostic classes:
-- `none`
-- `scratch`
-- `particle`
-
-### **2. A CLIP-based baseline model**
-Evaluated using:
-- Softmax probabilities  
-- Entropy  
-- Confidence  
+### **2. Quantify Uncertainty**
+- Probability entropy  
+- Max-prob (confidence)  
 - Brier score  
-- Expected Calibration Error (ECE)  
+- Expected Calibration Error (ECE)
 
-### **3. Visual diagnostic analysis**
-- Confidence histogram  
-- Entropy distribution  
-- Calibration / reliability diagram  
-- Confidence vs correctness scatter
+### **3. Generate Reliability & Calibration Reports**
+These measures reveal **how much the model overestimates itself**, a critical issue in semiconductor safety-critical environments.
 
 ---
 
+<<<<<<< HEAD
 ## Key Results
 
 | Metric | Value |
@@ -79,118 +66,119 @@ These plots reveal precisely where and why the model fails.
 ---
 
 ## Project Structure
+=======
+# Project Structure
+>>>>>>> 0e63026 (Update README with diagrams and full ASML benchmark documentation)
 
 ```
 asml-vlm-prob-benchmark/
 │
 ├── data/
-│   ├── images/                ← synthetic wafer images
-│   └── annotations/
-│       └── annotations.json   ← ground-truth labels
+│   ├── images/                  # Synthetic wafer images
+│   └── annotations/             # JSON annotations (task, label, prompt)
 │
 ├── scripts/
-│   ├── generate_dataset.py    ← dataset generation
-│   └── evaluate_clip.py       ← main evaluation + uncertainty scoring
+│   ├── run_all.py               # FULL pipeline runner
+│   ├── evaluate_clip.py         # Model evaluation and JSON export
+│   ├── eval_calibration.py      # Calibration metrics
+│   └── generate_reliability_plot.py
 │
-├── notebooks/
-│   └── uncertainty_analysis.ipynb
+├── src/
+│   ├── dataset.py               # WaferDataset loader
+│   ├── model.py                 # CLIP wrapper (safetensors enforced)
+│   └── metrics.py               # Confidence, entropy, Brier, calibration utils
 │
 ├── reports/
-│   ├── clip_results.json      ← raw model predictions and metrics
-│   └── asml_vlm_benchmark_report.md
+│   ├── clip_results.json
+│   ├── calibration_report.json
+│   └── reliability_diagram.png
 │
+├── reports_archive/             # Auto-archived previous runs
 └── README.md
 ```
 
 ---
 
-## Methods
+# Results Summary
 
-### **Uncertainty Metrics Implemented**
-- **Confidence:** `max(p)`  
-- **Entropy:** `-Σ p log p`  
-- **Brier Score:** squared probabilistic error  
-- **ECE (Expected Calibration Error):** measures miscalibration  
+### Confidence Distribution
+CLIP is consistently overconfident (~0.75–0.95), even when wrong.
 
-This aligns with modern evaluation standards in high-risk AI systems.
+### Accuracy
+Overall accuracy in this domain: **~34%**  
+— demonstrates *severe domain shift* from natural images to semiconductor imagery.
 
-### **Model**
-- CLIP ViT-B/32  
-- Loaded with `safetensors` only (avoids CVE-2025-32434 torch.load restrictions)
+### Calibration Metrics
+- **ECE:** ~0.55  
+- **MCE:** ~0.82  
+
+Large calibration errors indicate CLIP is **poorly aligned to its uncertainty**, making predictions appear more reliable than they truly are.
 
 ---
 
-## Installation
+# 🧬 Technical Highlights (Recruiter-Facing)
 
-```bash
-git clone https://github.com/yourusername/asml-vlm-prob-benchmark
+### ✔ Modular architecture with reusable components  
+### ✔ Zero-shot CLIP evaluation with strict safetensor enforcement (CVE-2025-32434 compliant)  
+### ✔ Full uncertainty quantification pipeline  
+### ✔ Auto-archiving of previous experimental runs  
+### ✔ Reliability diagram + calibration analytics  
+### ✔ Clean Python packaging with `src/` layout  
+### ✔ Ready for extension with real ASML datasets or vision transformers  
+
+---
+
+# Why This Project Matters for ASML & Semiconductor AI
+
+Semiconductor manufacturing demands:
+- **High diagnostic precision**
+- **Interpretability**
+- **Fail-safe uncertainty awareness**
+
+This benchmark demonstrates:
+- How a generalist VLM behaves under **domain shift**
+- Where confidence diverges from truth
+- How models can be evaluated for **trustworthiness** before deployment  
+- The foundation for building **ASML-specific VLM benchmarks** and multimodal datasets  
+
+This kind of evaluation is essential to developing **safe, reliable AI tooling for EUV systems**.
+
+---
+
+# Installation
+
+```
+git clone https://github.com/QinnniQ/asml-vlm-prob-benchmark
 cd asml-vlm-prob-benchmark
-
 python -m venv .venv
-.\.venv\Scriptsctivate
-
+.venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-Or install manually:
+---
 
-```bash
-pip install torch torchvision transformers matplotlib numpy pillow ipykernel
+# Run Full Pipeline
+
+```
+python scripts/run_all.py
+```
+
+Outputs are automatically stored in:
+
+```
+/reports
+/reports_archive
 ```
 
 ---
 
-## Running the Evaluation
+# Roadmap
 
-```bash
-python scripts/evaluate_clip.py
-```
-
-Results are saved to:
-
-```
-reports/clip_results.json
-```
-
----
-
-## Running the Notebook
-
-Open VS Code → Jupyter Notebook → Select Kernel:
-
-```
-Python 3.11 (.venv)
-```
-
-Run:
-
-```
-notebooks/uncertainty_analysis.ipynb
-```
-
----
-
-## ASML Context
-
-Semiconductor lithography diagnostics require:
-
-- High model reliability  
-- Robust uncertainty quantification  
-- Calibration for trustworthy decision-making  
-
-This project illustrates how general-purpose VLMs **fail silently** without calibration, and why specialized domain training or fine-tuning is required.
-
-This benchmark serves as a **starting point** for building semiconductor-aware AI systems.
-
----
-
-## Future Work
-
-- Training a domain-tuned CLIP/SigLIP model  
-- Adding more diagnostic classes (blobs, streaks, edge defects)  
-- Integrating SEM-style textures  
-- Realistic noise to simulate lithography optics  
-- Temperature scaling or isotonic calibration  
+- Add ViT, SigLIP, and Qwen-VL baselines  
+- Add larger defect taxonomy  
+- Add ASML-style technical documents for multimodal grounding  
+- Integrate modern calibration fixes (temperature scaling, Dirichlet)  
+- Expand dataset realism with noise models & optical distortions  
 
 ---
 
