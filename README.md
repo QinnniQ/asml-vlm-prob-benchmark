@@ -190,7 +190,7 @@ This benchmark serves as a **starting point** for building semiconductor-aware A
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 - OpenAI CLIP  
 - HuggingFace Transformers  
@@ -198,7 +198,7 @@ This benchmark serves as a **starting point** for building semiconductor-aware A
 
 ---
 
-## 📬 Contact
+## Contact
 
 If you’re interested in semiconductor AI, vision-language models, or uncertainty-aware ML:
 
