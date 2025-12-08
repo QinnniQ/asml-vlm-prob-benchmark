@@ -153,17 +153,6 @@ Outputs are automatically stored in:
 /reports
 /reports_archive
 ```
-
----
-
-# Roadmap
-
-- Add ViT, SigLIP, and Qwen-VL baselines  
-- Add larger defect taxonomy  
-- Add ASML-style technical documents for multimodal grounding  
-- Integrate modern calibration fixes (temperature scaling, Dirichlet)  
-- Expand dataset realism with noise models & optical distortions  
-
 ---
 
 ## Acknowledgements
