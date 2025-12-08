@@ -1,0 +1,302 @@
+[
+  {
+    "image": "wafer_0.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_1.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_2.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_3.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_4.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_5.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_6.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_7.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_8.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_9.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_10.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_11.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_12.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_13.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_14.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_15.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_16.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_17.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_18.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_19.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_20.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_21.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_22.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_23.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_24.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_25.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_26.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_27.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_28.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_29.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_30.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_31.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_32.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_33.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_34.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_35.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_36.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_37.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_38.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_39.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_40.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_41.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_42.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_43.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_44.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_45.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_46.png",
+    "task": "defect_classification",
+    "label": "particle",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_47.png",
+    "task": "defect_classification",
+    "label": "none",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_48.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  },
+  {
+    "image": "wafer_49.png",
+    "task": "defect_classification",
+    "label": "scratch",
+    "prompt": "Identify the defect type in the wafer image."
+  }
+]
