@@ -3,7 +3,7 @@
 
 This project benchmarks a general-purpose Vision-Language Model (OpenAI CLIP ViT-B/32) on a synthetic diagnostic dataset designed to mimic ASML-style wafer defect scenarios.  
 
-The goal is to evaluate not only **classification accuracy**, but also **uncertainty**, **entropy**, and **calibration quality** — which are critical for safety-critical semiconductor diagnostic workflows.
+The goal is to evaluate not only classification accuracy, but also uncertainty, entropy, and calibration quality which are critical for safety-critical semiconductor diagnostic workflows.
 
 This repository demonstrates:
 - How VLMs behave on domain-specific semiconductor-style imagery  
