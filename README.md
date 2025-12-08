@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="ASML VLM Benchmark Logo" width="60%">
+</p>
+
 # ASML Vision-Language Benchmark with Probabilistic Scoring  
 ### Evaluating CLIP on Semiconductor-Style Diagnostic Tasks
 
