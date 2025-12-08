@@ -54,7 +54,7 @@ Evaluated using:
 | **Avg Confidence** | ~0.82 |
 | **Avg Entropy** | ~0.55 |
 
-### 🔎 Interpretation
+### Interpretation
 
 - CLIP is **highly overconfident** on semiconductor-style imagery  
 - ECE > 0.5 indicates **severe miscalibration**  
