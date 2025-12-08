@@ -102,7 +102,7 @@ CLIP is consistently overconfident (~0.75–0.95), even when wrong.
 
 ### Accuracy
 Overall accuracy in this domain: **~34%**  
-— demonstrates *severe domain shift* from natural images to semiconductor imagery.
+- demonstrates *severe domain shift* from natural images to semiconductor imagery.
 
 ### Calibration Metrics
 - **ECE:** ~0.55  
