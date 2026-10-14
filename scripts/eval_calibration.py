@@ -7,17 +7,18 @@ sys.path.insert(0, str(ROOT))
 import json
 import numpy as np
 
-RESULTS_PATH = Path("reports/clip_results.json")
-CALIB_REPORT_PATH = Path("reports/calibration_report.json")
+RESULTS_PATH = ROOT / "reports/clip_results.json"
+CALIB_REPORT_PATH = ROOT / "reports/calibration_report.json"
 
 def compute_ece(confidences, accuracies, n_bins=10):
     """Expected Calibration Error (ECE)."""
+    confidences, accuracies = _validate_inputs(confidences, accuracies, n_bins)
     bins = np.linspace(0, 1, n_bins + 1)
     ece = 0.0
 
     for i in range(n_bins):
         bin_lower, bin_upper = bins[i], bins[i + 1]
-        in_bin = (confidences >= bin_lower) & (confidences < bin_upper)
+        in_bin = (confidences >= bin_lower) & (confidences <= bin_upper if i == n_bins - 1 else confidences < bin_upper)
 
         if in_bin.sum() == 0:
             continue
@@ -33,12 +34,13 @@ def compute_ece(confidences, accuracies, n_bins=10):
 
 def compute_mce(confidences, accuracies, n_bins=10):
     """Maximum Calibration Error (MCE)."""
+    confidences, accuracies = _validate_inputs(confidences, accuracies, n_bins)
     bins = np.linspace(0, 1, n_bins + 1)
     mce = 0.0
 
     for i in range(n_bins):
         bin_lower, bin_upper = bins[i], bins[i + 1]
-        in_bin = (confidences >= bin_lower) & (confidences < bin_upper)
+        in_bin = (confidences >= bin_lower) & (confidences <= bin_upper if i == n_bins - 1 else confidences < bin_upper)
 
         if in_bin.sum() == 0:
             continue
@@ -50,13 +52,26 @@ def compute_mce(confidences, accuracies, n_bins=10):
     return float(mce)
 
 
+def _validate_inputs(confidences, accuracies, n_bins):
+    confidences = np.asarray(confidences, dtype=float)
+    accuracies = np.asarray(accuracies, dtype=float)
+    if n_bins < 1 or confidences.ndim != 1 or accuracies.shape != confidences.shape or len(confidences) == 0:
+        raise ValueError("Expected nonempty, equally sized 1D arrays and at least one bin")
+    if not np.all(np.isfinite(confidences)) or not np.all(np.isfinite(accuracies)):
+        raise ValueError("Confidence and accuracy values must be finite")
+    if np.any((confidences < 0) | (confidences > 1)) or np.any((accuracies < 0) | (accuracies > 1)):
+        raise ValueError("Confidence and accuracy values must be between 0 and 1")
+    return confidences, accuracies
+
+
 def main():
     print("=== ASML VLM Benchmark — Calibration Evaluation ===")
 
     if not RESULTS_PATH.exists():
         raise FileNotFoundError(f"Missing results file: {RESULTS_PATH}")
 
-    results = json.load(open(RESULTS_PATH))
+    with RESULTS_PATH.open(encoding="utf-8") as source:
+        results = json.load(source)
 
     # Extract confidences and correctness
     confidences = np.array([r["confidence"] for r in results])

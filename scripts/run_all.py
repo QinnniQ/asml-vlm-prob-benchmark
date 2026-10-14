@@ -10,14 +10,13 @@ sys.path.insert(0, str(ROOT))
 import json
 
 # Paths
-ROOT = Path(".")
 REPORTS = ROOT / "reports"
 ARCHIVE_DIR = ROOT / "reports_archive"
 
 SCRIPTS = {
-    "evaluate": "scripts/evaluate_clip.py",
-    "calibration": "scripts/eval_calibration.py",
-    "reliability": "scripts/generate_reliability_plot.py",
+    "evaluate": ROOT / "scripts/evaluate_clip.py",
+    "calibration": ROOT / "scripts/eval_calibration.py",
+    "reliability": ROOT / "scripts/generate_reliability_plot.py",
 }
 
 
@@ -59,8 +58,8 @@ def validate_dataset():
     """Basic validation to ensure images and annotations exist."""
     print("\n=== Validating Dataset ===")
 
-    ann_path = Path("data/annotations/annotations.json")
-    img_dir = Path("data/images")
+    ann_path = ROOT / "data/annotations/annotations.json"
+    img_dir = ROOT / "data/images"
 
     if not ann_path.exists():
         raise FileNotFoundError("Missing annotations.json")

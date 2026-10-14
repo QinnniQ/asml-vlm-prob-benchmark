@@ -1,14 +1,15 @@
 import json
 from pathlib import Path
 import numpy as np
-import matplotlib.pyplot as plt
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-RESULTS_PATH = Path("reports/clip_results.json")
-OUTPUT_PLOT = Path("reports/reliability_diagram.png")
+from scripts.eval_calibration import _validate_inputs
+
+RESULTS_PATH = ROOT / "reports/clip_results.json"
+OUTPUT_PLOT = ROOT / "reports/reliability_diagram.png"
 
 
 def compute_reliability_bins(confidences, accuracies, n_bins=10):
@@ -18,8 +19,9 @@ def compute_reliability_bins(confidences, accuracies, n_bins=10):
        bin_conf: average confidence per bin
        bin_acc: accuracy per bin
     """
+    confidences, accuracies = _validate_inputs(confidences, accuracies, n_bins)
     bins = np.linspace(0.0, 1.0, n_bins + 1)
-    bin_indices = np.digitize(confidences, bins) - 1
+    bin_indices = np.minimum(np.digitize(confidences, bins) - 1, n_bins - 1)
 
     bin_conf, bin_acc, bin_counts = [], [], []
 
@@ -40,19 +42,22 @@ def compute_reliability_bins(confidences, accuracies, n_bins=10):
     return bin_centers, np.array(bin_conf), np.array(bin_acc), np.array(bin_counts)
 
 
-def plot_reliability(bin_centers, bin_conf, bin_acc):
+def plot_reliability(bin_centers, bin_conf, bin_acc, bin_counts):
+    import matplotlib.pyplot as plt
+
     plt.figure(figsize=(7, 7))
 
     # Perfect calibration line
     plt.plot([0, 1], [0, 1], linestyle="--", color="gray", label="Perfect Calibration")
 
     # Reliability curve
-    plt.plot(bin_conf, bin_acc, marker="o", linewidth=2, label="Model Calibration")
+    observed = bin_counts > 0
+    plt.plot(bin_conf[observed], bin_acc[observed], marker="o", linewidth=2, label="Model Calibration")
 
     # Bars showing bin coverage
     plt.bar(
-        bin_centers,
-        bin_acc - 0,
+        bin_centers[observed],
+        bin_acc[observed],
         width=0.09,
         alpha=0.1,
         color="blue",
@@ -76,7 +81,8 @@ def main():
     if not RESULTS_PATH.exists():
         raise FileNotFoundError(f"Missing results file: {RESULTS_PATH}")
 
-    results = json.load(open(RESULTS_PATH, "r"))
+    with RESULTS_PATH.open(encoding="utf-8") as source:
+        results = json.load(source)
 
     confidences = np.array([r["confidence"] for r in results])
     accuracies = np.array([r["pred_label"] == r["true_label"] for r in results], dtype=float)
@@ -88,7 +94,7 @@ def main():
     print("Bin accuracy:  ", bin_acc)
     print("Bin counts:    ", bin_counts)
 
-    plot_reliability(bin_centers, bin_conf, bin_acc)
+    plot_reliability(bin_centers, bin_conf, bin_acc, bin_counts)
 
     print(f"\nSaved reliability diagram → {OUTPUT_PLOT.absolute()}")
     print("Done.")
